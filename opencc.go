@@ -58,7 +58,7 @@ var conversions = map[string]struct{}{
 	"hk2s": {}, "s2hk": {}, "s2t": {}, "s2tw": {}, "s2twp": {},
 	"t2hk": {}, "t2s": {}, "t2tw": {}, "tw2s": {}, "tw2sp": {},
 	"s2hk-finance": {},
-	"hk2t: {}, "t2jp: {}, "jp2t: {}, "tw2t": {},
+	"hk2t": {}, "t2jp": {}, "jp2t": {}, "tw2t": {},
 }
 
 // New construct an instance of OpenCC.
