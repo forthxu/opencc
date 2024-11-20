@@ -58,11 +58,12 @@ var conversions = map[string]struct{}{
 	"hk2s": {}, "s2hk": {}, "s2t": {}, "s2tw": {}, "s2twp": {},
 	"t2hk": {}, "t2s": {}, "t2tw": {}, "tw2s": {}, "tw2sp": {},
 	"s2hk-finance": {},
+	"hk2t: {}, "t2jp: {}, "jp2t: {}, "tw2t": {},
 }
 
 // New construct an instance of OpenCC.
 //
-// Supported conversions: s2t, t2s, s2tw, tw2s, s2hk, hk2s, s2twp, tw2sp, t2tw, t2hk, s2hk-finance
+// Supported conversions: s2t, t2s, s2tw, tw2s, s2hk, hk2s, s2twp, tw2sp, t2tw, t2hk, s2hk-finance, hk2t, t2jp, jp2t, tw2t
 func New(conversion string) (*OpenCC, error) {
 	if _, has := conversions[conversion]; !has {
 		return nil, fmt.Errorf("%s not valid", conversion)
