@@ -63,6 +63,7 @@ var conversions = map[string]struct{}{
 
 // New construct an instance of OpenCC.
 //
+// add support
 // Supported conversions: s2t, t2s, s2tw, tw2s, s2hk, hk2s, s2twp, tw2sp, t2tw, t2hk, s2hk-finance, hk2t, t2jp, jp2t, tw2t
 func New(conversion string) (*OpenCC, error) {
 	if _, has := conversions[conversion]; !has {
